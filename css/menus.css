@@ -1,0 +1,12 @@
+#menu-app img { max-width: 100%; }
+/* #menu-app img { max-height: 120px; } */
+#menu-app img { cursor: pointer; }
+#menu-app img.done { cursor: not-allowed; }
+#menu-app *[data-menu-app="order-form"] {
+    width: 100%;
+    height: 250px;
+}
+#menu-app img[data-menu-app="image"][src="assets/undecided.svg"],
+#menu-app img[data-menu-app="image"][src="./assets/undecided.svg"] {
+    width: 100%;
+}

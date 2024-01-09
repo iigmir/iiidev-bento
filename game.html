@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The card game</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg" />
+    <link rel="stylesheet" href="./css/game.css" />
+    <link rel="stylesheet" href="./css/sweetalert2.css" />
+</head>
+<body>
+    <main>
+        <h1 class="h1">The card game</h1>
+        <article id="app" hidden aria-hidden="true">
+            <button class="reset-button" type="button" v-on:click="fetch_game_images">Reset game</button>
+            <div class="cards">
+                <div v-for="(url, index) in gamelist_path" v-bind:key="url" class="item" v-bind:data-url="url">
+                    <div class="game-card">
+                        <div class="cover" v-bind:class="{ flipped: flip_status[index] > 0 }" v-on:click="flip_card(index)"></div>
+                        <img v-bind:src="url" v-bind:alt="url" width="160" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="pyro">
+                    <div class="before"></div>
+                    <div class="after"></div>
+                </div>
+            </div>
+            <!-- <button class="clear-button" type="button" v-on:click="check_cleared">Fake clear</button> -->
+        </article>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./js/game.js"></script>
+    <script></script>
+</body>
+</html>

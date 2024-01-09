@@ -1,0 +1,62 @@
+[
+    {
+        "id": 0,
+        "branch": "總部",
+        "contact": {
+            "address": "100台北市中正區南昌路一段4號",
+            "email": "jim@example.com",
+            "tel": "+14155440132",
+            "tel_readable": "+1 (415) 555-0132"
+        },
+        "coordinates": {
+            "latitude": 36,
+            "longitude": 138
+        },
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115709.27726522734!2d121.50391344055063!3d25.00300697983974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99f6807fa35%3A0x44bc277c3540eec9!2z6Ie654Gj6I-46YWS6IKh5Lu95pyJ6ZmQ5YWs5Y-457i95YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1701762364819!5m2!1szh-TW!2stw"
+    },
+    {
+        "id": 1,
+        "branch": "高雄文信店",
+        "contact": {
+            "address": "804高雄市鼓山區文信路337號",
+            "email": "jim@example.com",
+            "tel": "+14155576132",
+            "tel_readable": "+1 (415) 555-0132"
+        },
+        "coordinates": {
+            "latitude": 36,
+            "longitude": 138
+        },
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.4277283334876!2d120.29708509746331!3d22.66456459015772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e05fcab3fcfdd%3A0xb53f8c5a659e2bd5!2z5a-26ZuFIOmrmOmbhOaWh-S_oeW6lw!5e0!3m2!1szh-TW!2stw!4v1701762091784!5m2!1szh-TW!2stw"
+    },
+    {
+        "id": 2,
+        "branch": "台中大大店",
+        "contact": {
+            "address": "台中市西區大隆路20號14樓B棟",
+            "email": "jim@example.com",
+            "tel": "+14159050132",
+            "tel_readable": "+1 (415) 555-0132"
+        },
+        "coordinates": {
+            "latitude": 36,
+            "longitude": 138
+        },
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.468175923903!2d120.65285431540681!3d24.155308279103426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9a7cf59f63%3A0xb2b03cee65fd92f7!2zNDAz5Y-w5Lit5biC6KW_5Y2A5aSn6ZqG6LevMjDomZ8!5e0!3m2!1szh-TW!2stw!4v1459317628958"
+    },
+    {
+        "id": 4,
+        "branch": "苗栗石牌店",
+        "contact": {
+            "address": "苗栗縣三灣鎮120號",
+            "email": "jim@example.com",
+            "tel": "+14159139132",
+            "tel_readable": "+1 (415) 555-0132"
+        },
+        "coordinates": {
+            "latitude": 36,
+            "longitude": 138
+        },
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.4029224217627!2d120.95199074459583!3d24.628123404847667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34684d9806d304a1%3A0x3bd048c8a8265736!2sTemple!5e0!3m2!1sen!2stw!4v1702131842436!5m2!1sen!2stw"
+    }
+]

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>便丹盒</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <nav id="the-navigator" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">便丹盒</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">簡介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menus.html">菜單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="place.html">店家</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conat.html">回饋</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header class="text-center header">
+            <!-- assets/image.jpg -->
+            <div class="video-container">
+                <video playsinline autoplay muted loop poster="" class="video-background"
+                    src="./assets/Sfenj_being_deep_fried_in_Marrakesh_Morocco.ogv">
+                    <source src="./assets/Sfenj_being_deep_fried_in_Marrakesh_Morocco.ogv" type="video/ogv" />
+                </video>
+                <article class="viewport-header">
+                    <section>
+                        <h1>便丹盒</h1>
+                        <h2>滿足您飲食需求的好夥伴</h2>
+                    </section>
+                </article>
+            </div>
+        </header>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <!-- width="520" height="480" -->
+                    <img class="main-rice" src="./assets/image.jpg" alt="Food 肉絲蛋炒飯, 小茅屋, 台北 (16177047679)"
+                        title="bryan... from Taipei, Taiwan, CC BY-SA 2.0 https://creativecommons.org/licenses/by-sa/2.0, via Wikimedia Commons" />
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <article class="mt-3 container">
+                        <blockquote class="text-center">
+                            嘿 蛋炒飯 最簡單也最困難 飯要粒粒分開 還要沾著蛋
+                        </blockquote>
+                        <section class="text-left">
+                            <p>蛋炒飯，說簡單，其實也不簡單噠。為什麼？</p>
+                            <p>因為，我們常常在想，飯要怎麼吃比較好。但如今的社會，工業過度的社會，要找一個手作的，其實非常不容易。</p>
+                            <p>館們死天達，回育如進正一親大由邊年力所從開全？智營回輕。人學今用設愛外維。</p>
+                            <p>這就是為什麼，便當是個複雜的生意。我們也絕不能輕視這樣的便當。</p>
+                            <p>臺一他學雄中隊近；面是說去和些；化節民以興告麼證圖基畫病我原心童音花防東可呢口的居！保不變社類老動富天。界理來施和出就用天的利裝學！</p>
+                            <p>個大全？今展充人會解業。之科學？基性作和考公謝夠園定很開。</p>
+                            <br />
+                            <p>我們是便當人。便當人在此！</p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- <article class="form-container container mt-3">
+            <iframe src="order.html" frameborder="0" class="iframe"></iframe>
+        </article> -->
+        <article class="video-container container mt-3">
+            <h2>我們的影片</h2>
+            <iframe
+                class="iframe"
+                src="https://www.youtube.com/embed/Io1zLtg9p98?si=NtRBKtrqGjPRTTsB"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+            ></iframe>
+        </article>
+        <article class="form-container container mt-3">
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+                <div id="toast-reminder" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-reminder="main">
+                    <div class="toast-header">
+                        <!-- <img src="..." class="rounded me-2" alt="..."> -->
+                        <!-- <small data-reminder="help">11 mins ago</small> -->
+                        <strong class="me-auto" data-reminder="title"></strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body" data-reminder="content"></div>
+                </div>
+            </div>
+            <h2 class="text-center">下訂單吧</h2>
+            <form id="order-form">
+                <div class="mb-3">
+                    <label for="form-tel" class="form-label">手機</label>
+                    <input type="tel" class="form-control" id="form-tel" name="tel" placeholder="+886-123-456" required>
+                </div>
+                <div class="mb-3">
+                    <label for="form-flavours" class="form-label">口味</label>
+                    <input class="form-control" list="datalistOptions" id="form-flavours" name="flavour" />
+                    <datalist id="datalistOptions"></datalist>
+                </div>
+                <div class="additional">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="pepper" name="additional"
+                            id="pepper-add" />
+                        <label class="form-check-label" for="pepper-add">辣椒</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="pickled" name="additional"
+                            id="pickled" />
+                        <label class="form-check-label" for="pickled">醬菜</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="form-drinks" class="form-label">飲料</label>
+                    <select id="form-drinks" class="form-select" aria-label="飲料" name="drink">
+                        <option selected>飲料</option>
+                        <option value="r">紅茶</option>
+                        <option value="g">綠茶</option>
+                        <option value="d">冬瓜茶</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="form-additional" class="form-label">其他需求</label>
+                    <textarea class="form-control" id="form-additional" rows="3"
+                    name="other"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </article>
+        <!-- <article class="container mt-3">
+            <h2>顧客們的指教</h2>
+        </article> -->
+    </main>
+    <footer class="bg-body-tertiary bd-footer mt-5 py-4 py-md-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="h3">便丹盒</p>
+                    <p>滿足您飲食需求的好夥伴</p>
+                </div>
+                <div class="col">
+                    <address>
+                        <p>100台北市中正區南昌路一段4號</p>
+                        <p><a href="mailto:jim@example.com">jim@example.com</a></p>
+                        <p><a href="tel:+14155550132">+1 (415) 555‑0132</a></p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  -->
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

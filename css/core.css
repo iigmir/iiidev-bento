@@ -1,0 +1,4 @@
+header p ,
+footer address p {
+    margin-bottom: 0;
+}

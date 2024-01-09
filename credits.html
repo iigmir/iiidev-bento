@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg" />
+</head>
+<body>
+    <main id="app" class="container my-3"></main>
+    <script src="./js/showdownjs/showdown.min.js"></script>
+    <script>
+    const render = (response = "") => {
+        const converter = new showdown.Converter();
+        const html = converter.makeHtml(response);
+        document.querySelector("#app").innerHTML = html;
+    };
+    const main = () => {
+        const ajax = fetch( "./Images.md" ).then( r => r.text() );
+        ajax.then( render );
+    };
+    main();
+    </script>
+</body>
+</html>
